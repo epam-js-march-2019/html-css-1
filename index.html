@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Tokyo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main>
+      <h2 class="visually-hidden">Weather broadcast</h2>
+      <article class="broadcast container">
+        <div class="broadcast__row">
+          <p class="broadcast__status">Sunny</p>
+          <h3 class="broadcast__date">Tokyo - Wednesday, July 31</h3>
+        </div>
+        <div class="broadcast__row">
+          <p class="broadcast__temperature">28 °C</p>
+          <figure class="broadcast__graph-container">
+            <canvas id="graph" class="broadcast__graph"></canvas>
+          </figure>
+          <table class="broadcast__table forecast">
+            <tbody>
+              <tr class="forecast__status">
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="forecast__day">
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+              <tr class="forecast__temperature forecast__temperature--day">
+                <td>28°C</td>
+                <td>22°C</td>
+                <td>30°C</td>
+              </tr>
+              <tr class="forecast__temperature forecast__temperature--night">
+                <td>18°C</td>
+                <td>20°C</td>
+                <td>27°C</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </main>
+    <script src="js/graph.js" type="text/javascript"></script>
+  </body>
+</html>
