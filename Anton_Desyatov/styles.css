@@ -1,0 +1,119 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+.shadowBg{
+    background: url('images/forest.png');
+    background-position: center;
+    width: 800px;
+    height: 600px;
+}
+
+.background{
+    background: url("images/backgroundBlack.png");
+    background-position: center;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.mainDiv{
+    background: url("images/backgroundBlack.png");
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,205px );
+    grid-template-rows: repeat(2, 205px);
+    width:  615px;
+    height: 410px;
+    margin:auto;
+    font-family: Verdana;
+    font-weight: bold;
+    color: white;
+}
+
+.subDiv{
+    min-height: 205px;
+    display: grid;
+}
+
+.imgContainer{
+    width:90px;
+    height: 77px;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 26px;
+    padding-right: 57.5px;
+    padding-left:57.5px;
+}
+
+.textContainer{
+    width: 205px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding-bottom: 45px;
+}
+
+.textContainer>p{
+    font-size: 16px;
+    height: fit-content;
+    margin:0;
+}
+
+.special{
+    height:105px;
+    width:205px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.littleImage{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#weekly{
+    display: grid;
+    width:205px;
+    height:100px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(182,51,86);
+    grid-template-rows: 33px 33px 33px;
+    grid-template-columns: 62.5px 40px 40px 62.5px;
+}
+
+.subWeatherFirst{
+    justify-self: end;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.subWeatherLast{
+    justify-self: start;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.subWeatherMiddle{
+    justify-self: center;
+    font-size: 12px;
+}
+.days{
+    margin:0;
+}
+
+.subDegreese{
+    margin:0;
+    padding-bottom:16px;
+}
