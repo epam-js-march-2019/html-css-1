@@ -4,7 +4,7 @@
 	border: 1px solid darkgrey;
 	border-radius: 3%;
 	padding-right: 0;
-	border-radius: 29px;
+	border-radius: 19px;
 	width: 389px;
 	height: 464px;
 	box-shadow: 10.5px 18.187px 21px rgba(0,0,0,0.15);
@@ -92,8 +92,8 @@
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	border-bottom-left-radius: 29px;
-	border-bottom-right-radius: 29px;
+	border-bottom-left-radius: 19px;
+	border-bottom-right-radius: 19px;
 }
 
 
