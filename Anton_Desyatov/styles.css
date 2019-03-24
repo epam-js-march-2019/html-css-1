@@ -96,21 +96,22 @@ html,body{
 
 .subWeatherFirst{
     justify-self: end;
-    font-size: 12px;
+    font-size: 10px;
     padding-right: 10px;
 }
 
 .subWeatherLast{
     justify-self: start;
-    font-size: 12px;
+    font-size: 10px;
     padding-left: 10px;
 }
 .subWeatherMiddle{
     justify-self: center;
-    font-size: 12px;
+    font-size: 10px;
 }
 .days{
     margin:0;
+    padding-top: 20px;
 }
 
 .subDegreese{
