@@ -15,9 +15,6 @@ html,body{
     background-position: center;
     width: 800px;
     height: 600px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
 }
 
 .mainDiv{
@@ -47,9 +44,6 @@ html,body{
     width:90px;
     height: 77px;
     margin:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 45px;
     padding-bottom: 26px;
     padding-right: 57.5px;
@@ -59,7 +53,7 @@ html,body{
 .textContainer{
     width: 205px;
     height: 12px;
-    display: flex;
+    display: grid;
     justify-content: center;
     margin:0;
     padding-bottom: 45px;
@@ -74,7 +68,7 @@ html,body{
 .special{
     height:105px;
     width:205px;
-    display:flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
