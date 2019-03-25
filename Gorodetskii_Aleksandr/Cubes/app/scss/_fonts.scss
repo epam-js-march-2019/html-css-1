@@ -1,0 +1,11 @@
+@font-face {
+	font-weight: 700;
+	font-family: "LatoBold";
+	font-style: normal;
+	font-display: swap;
+
+	src: url("../fonts/opensans.woff2") format("woff2"), 
+		url("../fonts/opensans.woff") format("woff"),
+		url("../fonts/opensans.eot") format("eot"),
+		url("../fonts/opensans.ttf") format("ttf");
+}
