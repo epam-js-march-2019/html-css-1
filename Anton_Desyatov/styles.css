@@ -6,6 +6,8 @@ html,body{
 .shadowBg{
     background: url('images/forest.png');
     background-position: center;
+    display: grid;
+    margin-right: 0;
     width: 800px;
     height: 600px;
 }
@@ -15,6 +17,8 @@ html,body{
     background-position: center;
     width: 800px;
     height: 600px;
+    display: grid;
+    align-content: center;
 }
 
 .mainDiv{
@@ -22,14 +26,14 @@ html,body{
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
+    margin:0 auto;
+    position: relative;
     display: grid;
-    justify-content: center;
-    align-content: center;
     grid-template-columns: repeat(3,205px );
     grid-template-rows: repeat(2, 205px);
     width:  615px;
     height: 410px;
-    margin:auto;
+    /*margin:auto;*/
     font-family: Verdana;
     font-weight: bold;
     color: white;
