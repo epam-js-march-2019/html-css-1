@@ -5,3 +5,39 @@
 	flex-flow: column nowrap;
 }
 
+#weather_info {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#current_date p {
+	color: white;
+	margin: 0
+}
+
+#day_of_week {
+	font-size: 180%;
+}
+
+#date {
+	font-size: 100%
+}
+
+#current_date {
+	justify-content: flex-end;
+	color: white;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#grad {
+	font-size: 550%;
+	color: white;
+}
+
+#location {
+	font-size: 150%;
+	color: white;
+}
