@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Dosis", "Arial", sans-serif;
+}
+
+.widget-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: auto;
+    background: url("images/main_bg.png") no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    
+}
+
+.widget {
+    display: flex;
+    justify-content: space-between;
+    width: 581px;
+    max-height: 438px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sky {
+    position: relative;
+    background: url("images/sun.svg") no-repeat 50% 15%, url("images/bg_tower.png") no-repeat;
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+    border-right: 1px solid #771921;
+}
+
+.sky_bg {
+    border-radius: 5px 0 0 5px;
+}
+
+.sky_condition {
+    background-color: rgba(75, 52, 42, 0.89);
+    font-size: 36px;
+    font-weight: 200;
+    margin: 0;
+    margin-top: 240px;
+    padding: 26px;
+}
+
+.sky_city {
+    background-color: rgba(115, 31, 36, 0.89);
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    padding: 42px 0;
+}
+
+.temperature {
+    background-color: white;
+    width: 50%;
+    color: #771921;
+    text-align: center;
+}
+
+.temperature__list {
+    list-style: none;
+    width: 81%;
+    margin: 21px auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.temperature__value {
+    font-size: 101px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+.weather__list {
+    
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.temperature__graph {
+    padding: 28px 0 16px;
+    border-top: 1px solid #771921;
+    border-bottom: 1px solid #771921;
+}
+
+.temperature__degree_night {
+    color: #332126;
+}
+
+.temperature__day {
+    font-size: 16px;
+    border-bottom: 1px solid #771921;
+    margin-top: 16px;
+    padding: 0 12px 12px;
+}
+
+.temperature__degree {
+    margin-top: 11px;
+}
+
+.temperature__item {
+    position: relative;
+}
+
+.temperature__item_sun::before {
+    content: url("images/little_sun.png"); 
+}
+
+.temperature__item_cloud::before {
+    content: url("images/cloudy_sun.png");  
+}
+
+
+
