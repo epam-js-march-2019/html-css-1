@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(Background.jpg) no-repeat;
+    padding: 82px 109px;
+}
+
+/* Оформление центрального фонового блока */
+body .main{
+    width: 583px;
+    height: 438px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+/* Добавление картинки с градиентом */
+.main .tower_image {
+    background-image: linear-gradient(to bottom, white 0%, transparent 40%), url(Tower.jpg);
+    border-radius: 5px 0px 0px 8px;
+    background-size: 292px 438px;
+    width: 292px;
+    height: 438px;
+    display: inline-block;
+    position: relative;
+    border-right: 1px solid black;
+}
+/* Добавление большого солнышка (главное, говорить это с серьезным лицом) */
+.main img {
+    display:inline-block;
+    position:absolute;
+    top: 43px;
+    left: 75px;
+}
+
+/* Добавление нижнего блока с текстом */
+.main .bottom_rect {
+    display:inline-block;
+    position:absolute;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+
+    /* Оформление текста */
+    color:white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size:22px;
+
+    /* Фон */
+    background-color:rgba(119,25,33,.89);
+    padding:40px 35px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+/* Добавление верхнего блока с текстом */
+.main .top_rect {
+    display:inline-block;
+    position:absolute;
+    bottom: 107.5px;
+    left: 0px;
+
+    /* Оформление текста */
+    color:white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    font-size:36px;
+
+    /* Фон */
+    background-color:rgba(46,28,37,.89);
+    padding:30px 105px;
+}
+
+/* Инфографика на правой части */
+ .wrap_section2{
+     background-color: white;
+     width: 287px;
+     height: 438px;
+     display: inline-block;
+     position: relative;
+ }
+
+ .temperature {
+     position: absolute;
+     display: inline-block;
+     right: 33px;
+     padding: 10px 0px 5px 0px;
+     font-family: 'Dosis', sans-serif;
+     font-weight: 200;
+     font-size: 101px;
+     color: #771921;
+     margin: 0px 0px;
+     border-bottom: 0.5px solid #771921;
+ }
+.wrap_graf{
+    position: absolute;
+    top: 120px;
+    left: -30px;
+
+}
+.graph_1{
+    border-bottom: 0.5px solid #771921;
+    padding: 0px 0px 15px 0px;
+}
+
+.forecast-1{
+    position: absolute;
+    display: inline-block;
+    top: 210px;
+    left: -23px;
+}
+.forecast-2{
+    position: absolute;
+    display: inline-block;
+    top: 210px;
+    left: 57px;
+}
+.forecast-3{
+    position: absolute;
+    display: inline-block;
+    top: 210px;
+    left: 135px;
+}
+
+.wrap_section2 img:not(.graph_1){
+    width: 37px;
+    height: 37px;
+}
+.wrap_week_text span{
+    padding: 0px 15px 10px 13px;
+    margin: 0px 15px 0px 15px;
+}
+
+.wrap_temp_red span{
+    padding: 0px 10px 10px 10px;
+    margin: 0px 15px 0px 15px;
+}
+
+.wrap_temp_black span{
+    padding: 0px 10px 10px 10px;
+    margin: 0px 15px 0px 15px;
+}
+
+.wrap_week_text{
+    position: absolute;
+    left: 30px;
+    bottom: 120px;
+}
+.wrap_temp_red{
+    position: absolute;
+    left: 27px;
+    bottom: 70px;
+}
+.wrap_temp_black{
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+.week_text {
+     border-bottom: 0.5px solid #771921;
+     color: #771921;
+     font-family: 'Dosis', sans-serif;
+     font-weight: 400;
+     font-size: 16px;
+ }
+.temperature_text_red{
+    color: #771921;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.temperature_text_black{
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
