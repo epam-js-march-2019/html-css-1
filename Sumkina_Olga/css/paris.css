@@ -1,6 +1,7 @@
 #widget_container {
 	background: url(C:/dev/projects/epam/html-css-1/Sumkina_Olga/img/paris/Paris.png) no-repeat;
 	height: 500px;
+	width: 700px;
 	display: flex;
 	flex-flow: column nowrap;
 }
