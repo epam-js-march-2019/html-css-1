@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "Dosis-Book";
+	src: url("../fonts/Dosis_Book/Dosis-Book.eot");
+	src: url("../fonts/Dosis_Book/Dosis-Book.woff");
+	src: url("../fonts/Dosis_Book/Dosis-Book.svg");
+	src: url("../fonts/Dosis_Book/Dosis-Book.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Dosis-ExtraLight";
+	src: url("../fonts/Dosis_ExtraLight/Dosis-ExtraLight.eot");
+	src: url("../fonts/Dosis_ExtraLight/Dosis-ExtraLight.woff");
+	src: url("../fonts/Dosis_ExtraLight/Dosis-ExtraLight.woff2");
+	src: url("../fonts/Dosis_ExtraLight/Dosis-ExtraLight.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Dosis-Light";
+	src: url("../fonts/Dosis_Light/Dosis-Light.eot");
+	src: url("../fonts/Dosis_Light/Dosis-Light.woff");
+	src: url("../fonts/Dosis_Light/Dosis-Light.svg");
+	src: url("../fonts/Dosis_Light/Dosis-Light.ttf");
+	font-style: normal;
+	font-weight: normal;
+}

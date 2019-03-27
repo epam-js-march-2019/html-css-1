@@ -1,0 +1,186 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/first.jpeg);
+	background-size: cover;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: auto;
+}
+
+.square {
+	outline: 1px solid;
+	width: 580px;
+	height: 437px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.leftSide {
+	float: left;
+	background-image: url(../images/Second1.jpg);
+	width: 290px;
+	height: 437px;
+}
+
+.rightSide {
+	float: right;
+	background-image: url(../images/Second2.jpeg);
+	width: 290px;
+	height: 437px;
+}
+
+.sunny{
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: 50px;
+	left: 74px;
+}
+
+.square-red {
+	width: 290px;
+	height: 105px;
+	bottom: 0;
+	margin: 0;
+	position: absolute;
+	background-color: #771921;
+	opacity: 0.9;
+	font-family: Dosis-Light;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4em;
+	line-height: 100px;
+}
+
+.square-burgundy {
+	width: 290px;
+	height: 93px;
+	bottom: 105px;
+	margin: 0;
+	position: absolute;
+	background-color: #35262b;
+	opacity: 0.9;
+	font-family: Dosis-Light;
+	text-align: center;
+	color: #fff;
+	font-size: 2.3em;
+	line-height: 90px;
+}
+
+.tempreature {
+	text-align: center;
+	width: 290px;
+	height: 143px;
+	font-family: "Dosis-ExtraLight";
+	font-size: 6em;
+	margin: auto;
+	line-height: 143px;
+	position: absolute;
+	color: #661f26;
+}
+
+.grafic {
+	width: 210px;
+	height: 98px;
+	border-top: 0.2px solid #661f26;
+	border-bottom: 0.2px solid #661f26;
+	margin-top: 145px;
+	margin-left: 40px;
+	margin-bottom: 0;
+}
+
+.frame {
+	width: 210px;
+	height: 114px; 
+	margin: auto;
+	padding-top: 0;
+	text-align: center;
+}
+
+.frame-2 {
+	width: 210px;
+	height: 81px; 
+	margin: auto;
+	padding-top: 0;
+	text-align: center;
+}
+
+.th1 {
+	padding-left: 5px;
+	padding-top: 16px;
+	padding-bottom: 0;
+	padding-right: 2px;
+	width: 41px;
+	height: 50px;
+}
+
+.th2 {
+	padding-left: 5px;
+	padding-top: 16px;
+	padding-bottom: 0;
+	padding-right: 0;
+	width: 41px;
+	height: 50px;
+}
+
+.th3 {
+	padding-top: 0;
+	width: 50px;
+	height: 30px;
+}
+
+.tdMiddle {
+	width: 29px;
+	height: 50px;
+}
+
+.tdMiddle2 {
+	width: 29px;
+	height: 44px;
+}
+
+td{
+	width: 49px;
+	height: 44px;
+	font-size: 1.1em;
+	padding-top: 0;
+	margin: 0;
+	text-align: center;
+	
+}
+
+.td1 {
+	border-bottom: 0.5px solid #661f26;
+	color: #661f26; 
+	font-family: "Dosis-Book";
+}
+
+.tempr1 {
+	width: 48px;
+	height: 18px;
+	margin-bottom: 0;
+	margin-top: auto;
+	color: #661f26;
+	font-family: "Dosis-Book";
+}
+
+.tempr2 {
+	width: 48px;
+	height: 18px;
+	margin-top: 0;
+	vertical-align: top;
+	font-family: "Dosis-Book";
+}
