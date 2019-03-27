@@ -66,14 +66,23 @@
     color: white;
     margin: 100px auto 0 auto;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .day {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border-right: 1px solid white;
+    font-family: 'Lato';
+    width: 18%;
+    align-items: center;
+}
+
+#forecast div:nth-child(5) {
+	border: 0;
 }
 
 .slider {
