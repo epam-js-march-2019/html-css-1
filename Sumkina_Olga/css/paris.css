@@ -42,8 +42,18 @@
 
 #grad {
 	font-size: 550%;
+	font-weight: 700;
 }
 
 #location {
 	font-size: 150%;
+}
+
+#wind span {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+#wind_icon {
+	margin-right: 10px;
 }
