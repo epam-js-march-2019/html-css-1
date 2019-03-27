@@ -1,5 +1,5 @@
 #widget_container {
-	background: url(C:/dev/projects/epam/html-css-1/Sumkina_Olga/img/paris/Paris.png) no-repeat;
+	background: url(../img/paris/Paris.png) no-repeat;
 	height: 500px;
 	width: 695px;
 	display: flex;
