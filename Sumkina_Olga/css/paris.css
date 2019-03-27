@@ -57,3 +57,26 @@
 #wind_icon {
 	margin-right: 10px;
 }
+
+/* forecast */
+
+#forecast {
+	display: flex;
+    flex-flow: row nowrap;
+    color: white;
+    margin: 100px auto 0 auto;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.day {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+	display: flex;
+	align-items: center;
+}
