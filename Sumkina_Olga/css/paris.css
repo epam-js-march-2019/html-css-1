@@ -1,7 +1,7 @@
 #widget_container {
 	background: url(C:/dev/projects/epam/html-css-1/Sumkina_Olga/img/paris/Paris.png) no-repeat;
 	height: 500px;
-	width: 700px;
+	width: 695px;
 	display: flex;
 	flex-flow: column nowrap;
 }
@@ -64,10 +64,11 @@
 	display: flex;
     flex-flow: row nowrap;
     color: white;
-    margin: 100px auto 0 auto;
+    margin: 130px auto 0 auto;
     width: 100%;
     justify-content: center;
     padding-top: 10px;
+    background-color: rgba(0,0,0, 0.2);
 }
 
 .day {
