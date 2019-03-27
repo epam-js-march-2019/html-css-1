@@ -12,6 +12,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	padding: 40px 40px 0 0;
+	color: white;
 
 }
 
@@ -20,7 +21,6 @@
 }
 
 #current_date p {
-	color: white;
 	margin: 0;
 }
 
@@ -34,17 +34,14 @@
 
 #current_date {
 	justify-content: flex-end;
-	color: white;
 	display: flex;
 	flex-flow: column nowrap;
 }
 
 #grad {
 	font-size: 550%;
-	color: white;
 }
 
 #location {
 	font-size: 150%;
-	color: white;
 }
