@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url(Background.jpg) no-repeat;
+    background: url(Background.jpg) no-repeat center;
     padding: 82px 109px;
 }
 
@@ -15,11 +15,12 @@ body .main{
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 5px;
+    margin: 0 auto;
 }
 
 /* Добавление картинки с градиентом */
 .main .tower_image {
-    background-image: linear-gradient(to bottom, white 0%, transparent 40%), url(Tower.jpg);
+    background-image: linear-gradient(145deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 8%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0) 10%), url(Tower.jpg);
     border-radius: 5px 0px 0px 8px;
     background-size: 292px 438px;
     width: 292px;
