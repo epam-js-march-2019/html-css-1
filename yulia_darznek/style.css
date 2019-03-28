@@ -85,9 +85,21 @@
   background-color: #bd54cd;
 }
 
+.wheather__text {
+  margin: 0;
+}
+
+.wheather__icon {
+  margin-bottom: 25px;
+}
+
 .wheather__item_info {
   font-size: 12px;
   justify-content: flex-start;
+}
+
+.wheather__item_info .wheather__icon {
+  margin-bottom: 0;
 }
 
 .wheather__top {
@@ -104,4 +116,12 @@
   text-align: center;
   box-sizing: border-box;
   box-shadow: inset 0 0 35px rgba(39, 36, 37, 0.22);
+}
+
+.table td {
+  padding: 0
+}
+
+.table__head td {
+  padding-bottom: 9px;
 }
