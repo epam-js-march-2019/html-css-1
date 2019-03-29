@@ -6,95 +6,58 @@
     <link href="styles.css" rel = "stylesheet" type ="text/css"/>
 </head>
 <body>
-<div class ="shadowBg">
-    <div class =background>
-        <div class ="mainDiv">
-            <div id = "first" class = "subDiv" style="background-color: rgb(6,179,219)" >
-                <div class = "imgContainer">
-                    <img alt ="Rainy weather" class="resized" src="images/Rain.png"/>
-                </div>
-                <div class = "textContainer">
+    <div class = "background">
+        <article class ="widgetWindow">
+            <section class = "widgetWindow__element aqua">
+                    <img alt ="Rainy weather" class="weatherPicture" src="../images/Rain.png"/>
                     <p>CHICAGO / 23&#176;</p>
-                </div>
-            </div>
-            <div id = "second" class = "subDiv" style="background-color: rgb(78,212,134)">
-                <div class = "imgContainer">
-                    <img alt = "Misty weather" class ="resized" src="images/Fog.png"/>
-                </div>
-                <div class = "textContainer">
+            </section>
+            <section class = "widgetWindow__element green">
+                    <img alt = "Misty weather" class ="weatherPicture" src="../images/Fog.png"/>
                     <p>SEATTLE / 34&#176;</p>
-                </div>
-            </div>
-            <div id = "third" class = "subDiv" style="background-color: rgb(97,57,246)">
-                <div class = "imgContainer">
-                    <img alt = "Sunny weather" class = "resized" src="images/CS.png">
-                </div>
-                <div class = "textContainer">
+            </section>
+            <section class = "widgetWindow__element blue">
+                    <img alt = "Sunny weather" class = "weatherPicture" src="../images/CS.png">
                     <p>BROOKLYN / 55&#176;</p>
-                </div>
-            </div>
-
-            <div id = "forth" class = "subDiv" style="background-color: rgb(227,182,61)">
-                <div class = "imgContainer">
-                    <img alt = "Snowy weather" class ="resized" src="images/CSS.png">
-                </div>
-                <div class = "textContainer">
+            </section>
+            <section class = "widgetWindow__element yellow">
+                    <img alt = "Snowy weather" class ="weatherPicture" src="../images/CSS.png">
                     <p>PORTLAND / 27&#176;</p>
+            </section>
+            <section class = "widgetWindow__element red">
+                <div class ="widgetWindow__element__imageContainer">
+                    <img alt="Windy night" src ="../images/CWM.png">
                 </div>
-            </div>
-            <div id = "fifth" style="background-color: rgb(220,61,102)">
-                <div class ="special">
-                    <img alt="Windy night" class = "resized"  src ="images/CWM.png">
-                </div>
-                <div id = "weekly">
-                    <div class ="subWeatherFirst">
-                        <p class ="days" >MON</p>
-                    </div>
-                    <div class ="subWeatherMiddle">
-                        <p class ="days">TUE</p>
-                    </div>
-                    <div class ="subWeatherMiddle">
-                        <p class ="days">WEN</p>
-                    </div>
-                    <div class ="subWeatherLast">
-                        <p class ="days">THU</p>
-                    </div>
-                    <div class = "subWeatherFirst">
-                        <img class="littleImage" alt="Rainy weather" src="images/CR_Alt_copy.png">
-                    </div>
-                    <div class ="subWeatherMiddle">
-                        <img class="littleImage" alt="Rainy weather" src="images/CR_Alt_copy.png">
-                    </div>
-                    <div class ="subWeatherMiddle">
-                        <img class ="littleImage" alt="Cloudy weather" src="images/Cloud_copy.png">
-                    </div>
-                    <div class ="subWeatherLast">
-                        <img class="littleImage" alt="Sunny weather" src="images/CS_copy.png">
-                    </div>
-                    <div class = "subWeatherFirst">
-                        <p class = "subDegreese">22&#176;</p>
-                    </div>
-                    <div class = "subWeatherMiddle">
-                        <p class = "subDegreese">19&#176;</p>
-                    </div>
-                    <div class = "subWeatherMiddle">
-                        <p class = "subDegreese">18&#176;</p>
-                    </div>
-                    <div class = "subWeatherLast">
-                        <p class = "subDegreese">14&#176;</p>
-                    </div>
-                </div>
-            </div>
-            <div id = "sixth" class = "subDiv" style="background-color: rgb(189,84,205)">
-                <div class = "imgContainer">
-                    <img alt ="Cloudy weather" class ="resized" src ="images/Cloud.png">
-                </div>
-                <div class = "textContainer">
+                <table class ="weeklyForecast">
+                    <thead>
+                    <tr>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WEN</th>
+                        <th>THU</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class ="table__td__imgContainer"><img src="../images/CR_Alt_copy.png"/></td>
+                        <td class ="table__td__imgContainer"><img src="../images/CR_Alt_copy.png"/></td>
+                        <td class ="table__td__imgContainer"><img src="../images/Cloud_copy.png"/></td>
+                        <td class ="table__td__imgContainer"><img src="../images/CS_copy.png"/> </td>
+                    </tr>
+                    <tr>
+                        <td class ="table__td__degrees">22&#176;</td>
+                        <td class ="table__td__degrees" >19&#176;</td>
+                        <td class ="table__td__degrees">18&#176;</td>
+                        <td class ="table__td__degrees">14&#176;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class = "widgetWindow__element purple">
+                    <img alt ="Cloudy weather" class ="weatherPicture" src ="../images/Cloud.png">
                     <p>SAN JOSE / 47&#176;</p>
-                </div>
-            </div>
-        </div>
+            </section>
+        </article>
     </div>
-</div>
 </body>
 </html>
