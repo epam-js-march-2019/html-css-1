@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,maximum-scale=1, initial-scale=1.0">
-    <title>Tokyo</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400');
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tokyo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400');
+        </style>
+    </head>
 <body>
-    <div class="whole_wrap">
-    <div class="main">
-        <div class="tower_image">
-            <img src="theSun.gif" alt="The Sun" width="130" height="132">
-            <div class="top_rect">Sunny</div>
-            <div class="bottom_rect">Tokyo - Wednesday, July 31</div>
+    <div class="weather-widget">
+        <section class="weather-widget__right-section">
+            <img class="weather-widget__icon" src="theSun.gif" alt="The Sun" width="130" height="132">
+            <div class="weather-widget__block_top">Sunny</div>
+            <div class="weather-widget__block_bottom">Tokyo - Wednesday, July 31</div>
+        </section>
+        <section class="weather-widget__left-section">
+            <p class="weather-widget__text">28 &#176;C</p>
+            <img class="weather-widget__img" src="graph.gif" alt="graph" width="207" height="53">
+            <table class="weather-widget__table">
+                <thead>
+                <tr>
+                    <td>
+                        <img src="smallSun.gif" alt="sun">
+                    </td>
+                    <td>
+                        <img src="SunCloud.gif" alt="sun&cloud">
+                    </td>
+                    <td>
+                        <img src="SunCloud.gif" alt="sun&cloud">
+                    </td>
 
-        </div><div class="wrap_section2">
-            <div class="temperature">28 &#176;C</div>
-            <div class="wrap_graf"><img class="graph_1" src="graph.gif" alt="graph" width="207" height="53"></div>
-            <div class="forecast-1"><img src="smallSun.gif" alt="smallSun"></div>
-            <div class="forecast-2"><img src="SunCloud.gif" alt="SunCloud"></div>
-            <div class="forecast-3"><img src="SunCloud.gif" alt="SunCloud"></div>
-            <div class="wrap_week_text"><span class="week_text">Thu</span>
-                <span class="week_text">Fri</span>
-                <span class="week_text">Sat</span></div>
-           <div class="wrap_temp_red"><span class="temperature_text_red">28 &#176;C</span>
-               <span class="temperature_text_red">22 &#176;C</span>
-               <span class="temperature_text_red">30 &#176;C</span></div>
-            <div class="wrap_temp_black"> <span class="temperature_text_black">18 &#176;C</span>
-                <span class="temperature_text_black">20 &#176;C</span>
-                <span class="temperature_text_black">27 &#176;C</span></div>
-        </div>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="weather-widget__table-row">
+                    <td>Thu</td>
+                    <td>Fri</td>
+                    <td>Sat</td>
+                </tr>
+                <tr class="weather-widget__table-row_color_red">
+                    <td>28 &#176;C</td>
+                    <td>22 &#176;C</td>
+                    <td>30 &#176;C</td>
+                </tr>
+                <tr class="weather-widget__table-row_color_black">
+                    <td>18 &#176;C</td>
+                    <td>20 &#176;C</td>
+                    <td>27 &#176;C</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
     </div>
-    </div>
-
 </body>
 </html>
