@@ -1,18 +1,89 @@
-'use strict';
+// mock data
+var forecasts = [29, 19.7, 24.2, 27.3, 19, 29, 24.5];
+var xRowMockData = [0, 87, 140, 242, 348, 410, 480];
 
-var forecast = [18, 20, 18, 20, 18, 20, 17];
+// масштабирует сетку координат канваса под заданные размеры
+var scaleRange = function(range, limitX, limitY) {
 
+  var resultRangeY = range.map(function(t) {
+    return t - Math.min.apply(null, range);
+  });
+
+// находим макс в каждом ряду
+  var maxX = Math.max.apply(null, xRowMockData);
+  var maxY = Math.max.apply(null, resultRangeY);
+
+// находим коэф масштабирования
+  var scaleX = Math.abs(maxX) / limitX || 1;
+  var scaleY = Math.abs(maxY) / limitY || 1;
+
+
+// масштабируем и записываем в массив координат каждой точки
+  return xRowMockData.map(function(item, i) {
+    return {
+      x: i ? Math.round(item / scaleX, 100) : 0,
+      y: Math.round(resultRangeY[i] / scaleY, 100),
+    };
+  });
+}
+
+
+// рисует канвас
 function draw(data) {
-  var canvas = getElementById('graph');
+  var canvas = document.getElementById('graph');
+
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
 
-    ctx.beginPath();
-    ctx.moveTo(75,50);
-    ctx.lineTo(100,75);
-    ctx.lineTo(100,25);
-    ctx.fill();
+    // задаем размеры и увеличиваем разрешение канваса в 5 раз
+    ctx.canvas.width = 194.5 * 5;
+    ctx.canvas.height = 46 * 5;
+
+
+    const STROKE_WIDTH = 5;
+    const POINT_RADIUS = 15;
+
+    // отступ для полей канваса
+    const canvasOffset = STROKE_WIDTH + POINT_RADIUS;
+
+    var canvasWidth = ctx.canvas.width;
+    var canvasHeight = ctx.canvas.height;
+
+    // получение координат
+    var scaledRange = scaleRange(data, canvasWidth - canvasOffset * 2, canvasHeight - canvasOffset * 2);
+
+    var rangeLength = scaledRange.length;
+
+
+    // рисуем
+    scaledRange.forEach(function(point, i, scaledRange) {
+      if (i) {
+        ctx.beginPath();
+        ctx.lineWidth = STROKE_WIDTH;
+        ctx.strokeStyle = '#771921';
+        ctx.fillStyle = "#FFFFFF";
+
+        ctx.moveTo(canvasOffset + scaledRange[i - 1].x, - canvasOffset + canvasHeight - scaledRange[i - 1].y);
+        ctx.lineTo(canvasOffset + point.x, - canvasOffset + canvasHeight - point.y);
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath()
+        ctx.arc(canvasOffset + scaledRange[i - 1].x, - canvasOffset + canvasHeight - scaledRange[i - 1].y, POINT_RADIUS, 0, 2 * Math.PI)
+        ctx.stroke();
+        ctx.fill();
+        ctx.closePath();
+
+        if (i === rangeLength - 1) {
+          ctx.beginPath();
+          ctx.arc(canvasOffset + point.x, - canvasOffset + canvasHeight - point.y, POINT_RADIUS, 0, 2 * Math.PI)
+          ctx.stroke();
+          ctx.fill();
+          ctx.closePath()
+        }
+      }
+    });
   }
 }
 
-window.onload = draw.bind(null, forecast);
+window.onload = draw.bind(null, forecasts);
