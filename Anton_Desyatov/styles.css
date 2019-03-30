@@ -3,7 +3,7 @@ html,body{
     margin: 0;
 }
 
-.background{
+.backgroundContainer{
     background: url("../images/forest.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,6 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .widgetWindow{
@@ -33,11 +32,10 @@ html,body{
     padding: 95px;
 }
 
-.widgetWindow__element{
+.square{
     min-height: 205px;
 }
 
-/*Colors of widgetWindow__elements*/
 .aqua{
     background-color: rgb(6,179,219);
 }
@@ -71,7 +69,7 @@ html,body{
     padding-left:57.5px;
 }
 
-p{
+.cityName{
     width: 205px;
     height: 12px;
     display: grid;
@@ -80,7 +78,7 @@ p{
     padding-bottom: 45px;
 }
 
-.widgetWindow__element__imageContainer{
+.weeklyImageContainer{
     height:105px;
     width:205px;
     display: flex;
@@ -96,11 +94,11 @@ p{
     padding: 14px;
 }
 
-.table__td__imgContainer{
+.tableImageContainer{
     text-align:center;
     padding-top:5px;
 }
 
-.table__td__degrees{
+.tableDegreesText{
     text-align:center;
 }
