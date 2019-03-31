@@ -149,5 +149,25 @@ body {
 	margin-bottom: 42px;
 }
 
+@keyframes dash {
+	from {
+		fill: transparent;
+	}
+	to {
+		stroke-dashoffset: 0;
+		fill: white;
+	}
+}
+
+.dash-animation {
+	stroke-dasharray: 400;
+	stroke-dashoffset: 400;
+	animation-name: dash;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	stroke: white;
+	stroke-width: 1px;
+}
 // ======media queries============
 @import "media";
