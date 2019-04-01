@@ -1,4 +1,5 @@
-#widget_container {
+/* wrapper */
+.widget {
 	background: url(../img/paris/Paris.png) no-repeat;
 	height: 500px;
 	width: 695px;
@@ -6,54 +7,59 @@
 	flex-flow: column nowrap;
 }
 
-#weather_info {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: flex-end;
-	padding: 40px 40px 0 0;
+/* weather info */
+
+.weather-info {
 	color: white;
 	font-family: 'Lato';
 	font-weight: 300;
 }
 
-#current_date {
+.widget__weather-info {
+	padding: 40px 40px 0 0;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+/* current date */
+
+.weather-info__date {
 	padding: 0 5% 12% 0
 }
 
-#current_date p {
+.date__about-weather {
 	margin: 0;
 }
 
-#day_of_week {
+.date__day-of-week {
 	font-size: 180%;
 }
 
-#date {
-	font-size: 100%
-}
-
-#current_date {
+.date__current-date {
+	font-size: 100%;
 	justify-content: flex-end;
 	display: flex;
 	flex-flow: column nowrap;
 }
 
-#grad {
+
+.weather__grad {
 	font-size: 550%;
 	font-weight: 700;
 }
 
-#location {
+.weather__location {
 	font-size: 150%;
 }
 
-#wind span {
+.weather__wind span {
 	font-weight: 700;
 	font-size: 30px;
 }
 
-#wind_icon {
+.wind__wind-icon {
 	margin-right: 10px;
 }
 
