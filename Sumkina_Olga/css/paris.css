@@ -44,7 +44,6 @@
 	flex-flow: column nowrap;
 }
 
-
 .weather__grad {
 	font-size: 550%;
 	font-weight: 700;
@@ -65,18 +64,21 @@
 
 /* forecast */
 
-#forecast {
-	display: flex;
-	flex-flow: row nowrap;
+.forecast {
 	color: white;
-	margin: 130px auto 0 auto;
 	width: 100%;
-	justify-content: center;
-	padding-top: 10px;
 	background-color: rgba(0,0,0, 0.2);
 }
 
-.day {
+.widget__forecast {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 130px auto 0 auto;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+.forecast__day {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
@@ -87,11 +89,11 @@
 	align-items: center;
 }
 
-#forecast div:nth-child(5) {
+.forecast section:nth-child(5) {
 	border: 0;
 }
 
-.slider {
+.forecast__slider {
 	display: flex;
 	align-items: center;
 }
