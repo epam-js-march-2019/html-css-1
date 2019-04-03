@@ -1,15 +1,15 @@
 body {
 	margin: 0;
-    padding: 0;
+    	padding: 0;
 }
 .contentDiv{
 	background-image: url(img/background.png);
 	background-repeat: no-repeat;	align-items: center;
 	background-size: cover;
 	max-width: 100%;
-    padding: 82px 109px;
-    display: flex;
-    justify-content: center;
+  	padding: 82px 109px;
+    	display: flex;
+    	justify-content: center;
 }
 
 .content {
@@ -17,11 +17,11 @@ body {
 	height: 430px;
 	background-repeat: no-repeat;
 	background-position: center;
-    align-items: center;
-    box-shadow: 0 0 10px black;
-    border-radius: 5px 5px 5px 5px;
-    display: flex;
-    justify-content: center;
+   	align-items: center;
+    	box-shadow: 0 0 10px black;
+    	border-radius: 5px 5px 5px 5px;
+    	display: flex;
+    	justify-content: center;
 }
 
 .content_part {
@@ -36,9 +36,9 @@ body {
 	border-right: 1px solid #771921;
 	border-radius: 5px 0px 0px 5px; 
 	font-family: 'Dosis', sans-serif;
-    font-weight: 200;
-    display: flex;
-    flex-direction: column;
+        font-weight: 200;
+    	display: flex;
+    	flex-direction: column;
 }
 
 .secondpart {
@@ -46,7 +46,7 @@ body {
 	font-family: 'Dosis', sans-serif;
 	border-radius: 0px 5px 5px 0px; 
 	display: flex;
-    flex-direction: column;
+    	flex-direction: column;
 }
 .firstpart__ul {
 	padding-left: 0px;
@@ -66,10 +66,10 @@ body {
 }
 
 .firstpart__ul__li_day_text {
-	color: white;
+	 color: white;
 	 font-size:36px;
 	 font-weight: 200;
-	line-height: 86px;
+	 line-height: 86px;
 }
 
 .firstpart__ul__li_citydate_text {
@@ -89,12 +89,12 @@ body {
 }
 
 .secondpart__table{
-    text-align: center;
-    margin-top: 25px;
+    	text-align: center;
+    	margin-top: 25px;
 }
 .secondpart_item{
 	margin-left: 40px;
-    margin-right: 40px;
+   	 margin-right: 40px;
 }
 .secondpart__table_numberDay 	{
 	color:#852d2d
@@ -115,18 +115,18 @@ body {
 	font-weight: 200;
 	text-align: center;
 	padding-top: 20px;
-    padding-bottom: 10px;
-    color:#852d2d;
-    width: 205px;
+    	padding-bottom: 10px;
+    	color:#852d2d;
+    	width: 205px;
 }
 .secondpart__article{
-	    float: left;
+    	float: left;
 }
 .secondpart__section{
 	margin-left: 40px;
-    margin-right: 40px;
-    width: 205px;
-    height: 150px;
+    	margin-right: 40px;
+   	width: 205px;
+    	height: 150px;
 }
 .secondpart__article_thu{
 	padding-right: 34px;
