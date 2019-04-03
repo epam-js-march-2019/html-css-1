@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -12,26 +12,38 @@
 <body>
 	<div id="app">
 		<div id="content">
+
 			<div id="left">
-				<div id="icon">
+				<div id="icon" aria-hidden="true">
 					<img src="sun.png" alt="sun" />
 				</div>
-				<div id="weather">
+				<div
+					id="weather"
+					aria-labelledby="date"
+				>
 					Sunny
 				</div>
-				<div id="date">
+				<div
+					id="date"
+					aria-level="1"
+					role="heading"
+					aria-labelledby="weather"
+				>
 					Tokyo - Wednesday, July 31
 				</div>
 			</div>
+
 			<div id="right">
-				<div id="temperature">
+				<div
+					id="temperature"
+				>
 					28&nbsp;&deg;C
 				</div>
-				<div id="graph">
+				<div id="graph" aria-hidden="true">
 					<img src="graph.png" alt="temperature graphic" />
 				</div>
 
-				<div id="days">
+				<div id="days" aria-hidden="true">
 					<div>
 						<img src="day_sunny.png" alt="sunny" />
 						<div class="day-name">
