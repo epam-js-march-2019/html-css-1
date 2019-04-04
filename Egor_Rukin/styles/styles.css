@@ -16,7 +16,7 @@ body {
   background-color: #4e5860;
   width: 800px;
   height: 600px;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .visually-hidden {
@@ -26,8 +26,7 @@ body {
 .weather-widget {
   width: 389px;
   height: 464px;
-  margin:0 auto;
-  vertical-align: middle;
+  margin: 0 auto;
   box-shadow: 0 21px 20px 1px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.07);
   border-radius: 10px 10px 29px 29px;
   background-color: #f1f8f9;
@@ -37,6 +36,8 @@ body {
 }
 
 .refresh-button {
+  margin: 0;
+  padding: 0;
   border: none;
   background: none;
   position: absolute;
@@ -48,70 +49,74 @@ body {
 }
 
 .today-weather-logo {
-  display:inline-block;
+  display: inline-block;
   margin: 68px 120px 0px 123px;
 }
 
 .middle-ribbon {
   margin-top: 52px;
   height: 69px;
+  padding-left: 22px;
 }
 
 .temp {
   position: relative;
-  display: inline-block;
-  margin: 0 14px 0 22px;
+  float: left;
+  margin: 12px 14px 17px 0;
+  height: 40px;
+  width: 79px;
+  line-height: 40px;
   color: #8d9396;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 58px;
   font-weight: 200;
   text-transform: uppercase;
-  vertical-align: top;
 }
 
 .temp__units {
-  font-size: 27px;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 17px;
   position: absolute;
-  top: 12px;
+  left: 67px;
+  top: 2px;
 }
 
 .weather-location{
-  display: inline-block;
-  margin-top: 10px;
-  margin-right: 53px;
+  /* border: 1px solid black; */
+  float: left;
+  margin-top: 5px;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 .weather-condition {
   margin: 0;
   color: #bac2c6;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   font-weight: 200;
 }
 .user-location {
   margin: 0;
   color: #a2a9ad;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 
 .date {
-  display: inline-block;
+  float: right;
   width: 65px;
   height: 69px;
-  padding-top: 18px;
+  padding-top: 15px;
   background-color: #54bae6;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  vertical-align: top;
   text-align: center;
 }
 
 .atmospheric-properties {
-  width: 389px;
   height: 136px;
   margin-top: 18px;
   padding-top: 46px;
@@ -121,15 +126,17 @@ body {
 
 .properties-list {
   list-style-type: none;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+  margin-left: 45px;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .properties-list li {
-  display: inline-block;
+  display: inline;
   margin-right: 35px;
 }
 .properties-list li::before{
@@ -138,7 +145,6 @@ body {
   position: relative;
   top: 5px;
 }
-
 .properties-list__wind::before{
   content: url(../images/wind.png);
 }
@@ -151,8 +157,9 @@ body {
 
 .scroll {
   list-style-type: none;
-  margin: 30px auto;
   padding: 0;
+  width: 45px;
+  margin: 30px auto 0;
   text-align: center;
 }
 
