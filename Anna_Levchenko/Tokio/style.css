@@ -7,23 +7,28 @@ body {
     font-family: "Dosis", "Arial", sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; 
+}
+
 .widget-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 800px;
-    height: auto;
+    height: 600px;
     background: url("images/main_bg.png") no-repeat;
-    background-size: cover;
-    min-height: 600px;
-    
+    background-size: cover;   
 }
 
 .widget {
     display: flex;
     justify-content: space-between;
     width: 581px;
-    max-height: 438px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -86,6 +91,7 @@ body {
 }
 
 .main-wrapper {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
