@@ -28,10 +28,7 @@
 
 html,
 body,
-.container,
-fieldset,
-input,
-h3 {
+.container {
   height: 100%;
   margin: 0;
   border: 0;
@@ -39,7 +36,11 @@ h3 {
 }
 
 ul,
-p {
+p,
+fieldset,
+input,
+h3 {
+  border: 0;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -111,7 +112,7 @@ p {
 
 .weather-widget__date {
   float: right;
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   background: #54bae6;
   color: white;
@@ -120,14 +121,14 @@ p {
 }
 
 .weather-widget__description {
-  font-family: 'Source Sans Pro', sans-serif;;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 24px;
   color: #bac2c6;
 }
 
 .weather-widget__location {
-  font-family: 'Source Sans Pro', sans-serif;;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: #a2a9ad;
