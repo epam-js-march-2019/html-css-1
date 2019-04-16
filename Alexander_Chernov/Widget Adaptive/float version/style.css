@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  background: url('../img/background.png');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: .5s ease-in-out;
+}
+
+.weather-widget {
+  width: 100%;
+  height: auto;
+
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 11.52px;
+  text-transform: uppercase;
+}
+
+.weather-widget__list {
+  width: 615px;
+  margin: 0 auto;
+  padding: 20px;
+  list-style: none;
+}
+
+.weather-widget__item {
+  width: 205px;
+  height: 205px;
+ 
+  position: relative;
+  float: left;
+  text-align: center;
+  
+  box-sizing: border-box;
+  box-shadow: inset -2px -2px rgba(0, 0, 0, 0.1), 
+              inset 1px 1px rgba(255, 255, 255, 0.35);
+  transition: .5s ease-in-out;
+}
+
+.weather-widget__item_turquoise {
+  background-color: #06b3db;
+}
+
+.weather-widget__item_green {
+  background-color: #4ed486;
+}
+
+.weather-widget__item_blue {
+  background-color: #6139f6;
+}
+
+.weather-widget__item_gold {
+  background-color: #e3b63d;
+}
+
+.weather-widget__item_red {
+  background-image: linear-gradient( #dc3d66 50%, #bd3559 50%);
+}
+
+.weather-widget__item_violet {
+  background-color: #bd54cd; 
+}
+
+.weather-widget__center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.weather-widget__half {
+  height: 50%;
+  position: relative;
+}
+
+.weather-widget__half table {
+  width: 100%;
+  font-size: 11px;
+  padding: 0 15px;
+}
+
+.weather-widget__half td {
+  padding: 3px 0;
+}
+
+
+@media (max-width: 800px) {
+  body {
+    background-image: url('../img/background-tab.png');
+  }
+
+  .weather-widget__list {
+    width: 90%;
+    min-width: 440px;
+    max-width: 760px;
+  }
+
+  .weather-widget__item {
+    width: 50%;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url('../img/background-mobile.png');
+  }
+
+  .weather-widget {
+    min-width: 320px;
+  }
+  
+  .weather-widget__list {
+    width: 90%;
+    min-width: 280px;
+    max-width: 440px;
+  }
+
+  .weather-widget__item {
+    width: 100%;
+    height: 160px;
+  }
+
+  .weather-widget__top {
+    height: 80px;
+  }
+
+}

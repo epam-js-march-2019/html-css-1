@@ -1,0 +1,108 @@
+.weather-widget {
+  background: url('img/background.png');
+  background-position: center;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-widget__list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 615px;
+  margin: 0;
+  padding: 0;
+
+  /* text styles */
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 11.52px;
+  text-transform: uppercase;
+}
+
+.weather-widget .square {
+  width: 205px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.widget.weather-widget p {
+  margin-top: 25px;
+}
+
+.weather-widget .square:nth-child(1) {
+  background-color: #06b3db;
+  box-shadow: inset -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget .square:nth-child(2) {
+  background-color: #4ed486;
+  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.1),
+    inset -1px 0 rgba(0, 0, 0, 0.1),
+    inset 0 -1px rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget .square:nth-child(3) {
+  background-color: #6139f6;
+  box-shadow: inset 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget .square:nth-child(4) {
+  background-color: #e3b63d;
+  box-shadow: inset 0 2px rgba(255, 255, 255, 0.1),
+    inset -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.weather-widget .square:nth-child(5) {
+  background-image: linear-gradient(#dc3d66 50%, #bd3559 50%);
+  box-shadow: inset 1px 0 rgba(0, 0, 0, 0.1),
+    inset -1px 0 rgba(0, 0, 0, 0.1),
+    inset 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.weather-widget .square:nth-child(6) {
+  background-color: #bd54cd;
+  box-shadow: inset 0 2px rgba(255, 255, 255, 0.1),
+    inset 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget .sketch {
+  justify-content: flex-start;
+}
+
+.weather-widget .sketch .square_top {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-widget .sketch .square_info {
+  height: 50%;
+}
+
+.weather-widget .sketch .square_info table {
+  height: 100%;
+  padding-top: 19px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 11px;
+}
+
+.weather-widget .sketch .square_info table td {
+  padding: 0 8px;
+}
